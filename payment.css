@@ -29,6 +29,15 @@ img {
     height: auto;
 }
 
+input{
+    border-radius: 5px;
+    border-style: none;
+}
+
+#paymentCategoryForm input{
+    margin-left: 40%;
+}
+
 button {
     display: block;
     margin: 10px auto;
