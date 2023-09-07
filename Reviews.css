@@ -2,7 +2,7 @@
 
 body {
     background-color: goldenrod;
-    font-family:  Arial , sans-serif;
+    font-family:  'Poppins', sans-serif;
 }
 
 h1 {
@@ -24,7 +24,7 @@ label {
 }
 
 select, textarea, input[type="text"] {
-    width: 100%;
+    width: 97%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #cccccc;
