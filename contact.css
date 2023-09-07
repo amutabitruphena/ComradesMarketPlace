@@ -6,7 +6,7 @@ fieldset{
     flex-direction: column;
     width: 50%;
     margin-left: 25%;
-    background-color: rgba(255, 69, 0, 0.8);
+    background-color: rgba(128, 0, 128, 0.7);
     border-radius: 5px;
     margin-top: 50px;
 }
@@ -63,5 +63,6 @@ footer{
     color: #000;
     margin-top: 80px;
     background-color: rgba(138, 43, 226, 0.5);
-    padding: 40px;
+    margin-top: 80px;
+    padding: 5px;
 }
