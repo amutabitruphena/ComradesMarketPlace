@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <title>PAYMENT</title>
-                <meta charset="UTF-8">
-                    <meta name="viewport" content="width=width-device" Initial scale="1.0">
-                        <link rel="stylesheet" type="text/css" href="style.css">
-        </head>
-        <body>
-            <div id="payment">
-                <div class="payment">
-                    <div class="pay">
-                    </div>
-                    <div class="stk">
-                    </div>
-                </div>
-            </div>
-        </body>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="payment.css"> 
+</head>
+<body>
+    <h1>Choose Payment Method</h1>
+
+    <!-- Payment Categories -->
+    <div>
+        <h2>Select Payment Category</h2>
+        <form id="paymentCategoryForm">
+            <label>
+                <input type="radio" name="category" value="furniture"> Furniture
+            </label>
+            <label>
+                <input type="radio" name="category" value="cookware"> Cookware
+            </label>
+            <label>
+                <input type="radio" name="category" value="clothing"> Clothing
+            </label>
+            <label>
+                <input type="radio" name="category" value="electronics"> Electronics
+            </label>
+            <label>
+                <input type="radio" name="category" value="beddings"> Beddings
+            </label>
+        </form>
+    </div>
+
+    <!-- Amount Input -->
+    <div>
+        <h2>Enter Amount</h2>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+
+    <div>
+        <!-- Payment Method Selection -->
+        <h2>Choose Payment Method</h2>
+        <a href="https://www.paypal.com" target="_blank">
+            <img src="C:\Users\User\Downloads\paypal icon.jpg" alt="PayPal">
+        </a>
+        <button onclick="processPayPalPayment()">Pay with PayPal</button>
+
+        <a href="https://www.mpesa.com" target="_blank">
+            <img src="C:\Users\User\Downloads\mpesa.png" alt="M-Pesa">
+        </a>
+        <button onclick="processMpesaPayment()">Pay with M-Pesa</button>
+    </div>
+
+    <script>
+        function processPayPalPayment() {
+            const category = document.querySelector('input[name="category"]:checked');
+            const amount = document.getElementById('amount').value;
+            if (category && amount) {
+                alert(`Redirecting to PayPal for payment of ${amount} for ${category.value}...`);
+            } else {
+                alert('Please select a category and enter an amount.');
+            }
+        }
+
+        function processMpesaPayment() {
+            const category = document.querySelector('input[name="category"]:checked');
+            const amount = document.getElementById('amount').value;
+            if (category && amount) {
+                alert(`Redirecting to M-Pesa for payment of ${amount} for ${category.value}...`);
+            } else {
+                alert('Please select a category and enter an amount.');
+            }
+        }
+    </script>
+</body>
+</html>
