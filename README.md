@@ -81,6 +81,7 @@ This website was built by a scrum team of 4 designers with their github username
 3. Samkhm
 
 4. Amutabitruphena
+   
 
 ## KNOWN ISSUES
 
