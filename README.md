@@ -9,7 +9,7 @@ The technologies used to create this website were:
 
 1. HTML
 2. CSS
-3.Java Script
+3.JAVASCRIPT
 ## PRE-REQUISITIES
 
 For this application to run you will need:
