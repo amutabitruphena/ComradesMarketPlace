@@ -21,6 +21,8 @@ Reviews Page: Share your feedback and read reviews from other users to make info
 
 About us page : This indicates the cofounders and the scrum team members with our contact details ,ready for any support incase of need.
 
+LINK to live site on GitHub pages include
+
 ## TECHNOLOGIES
 
 The technologies used to create this website were:
