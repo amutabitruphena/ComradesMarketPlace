@@ -10,6 +10,22 @@ h1 {
     margin-top: 20px;
 }
 
+.block-1 img{
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+
+}
+#paymentCategoryForm input{
+    margin-left: 35%;
+}
+
+#paymentCategoryForm input:hover{
+    cursor: pointer;
+}
+
 div {
     background-color:grey;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -22,20 +38,20 @@ div {
 h2 {
     text-align: center;
 }
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100px;
-    height: auto;
-}
-
 input{
     border-radius: 5px;
     border-style: none;
 }
 
-#paymentCategoryForm input{
-    margin-left: 40%;
+input:hover{
+    background-color: rgb(255, 200, 132);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+    height: auto;
 }
 
 button {
@@ -58,4 +74,17 @@ button:hover {
     div {
         margin: 20px auto;
     }
+}
+
+footer{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
