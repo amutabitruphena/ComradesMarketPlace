@@ -2,9 +2,11 @@
 
 ## DESCRIPTION
 
-COMRADES MARKETPLACE is your one-stop destination for all your shopping needs as a comrade because the prices are comrade fairly price. Our website offers a seamless and user-friendly experience for both buyers and sellers. Whether you're looking for brand new products or budget-friendly second-hand items, we've got you covered.It is designed and built in simplicity and realible in mind.
+COMRADES MARKETPLACE   is your one-stop destination for all your shopping needs as a comrade because the prices are comrade fairly price. Our website offers a seamless and user-friendly experience for both buyers and sellers. Whether you're looking for brand new products or budget-friendly second-hand items, we've got you covered.It is designed and built in simplicity and realible in mind.
 
 Features:
+
+
 Home Page: The homepage welcomes you with a clean and intuitive interface, showcasing featured products and the latest deals. It's designed to help you quickly find what you're looking for.
 
 Login Page: Create an account or log in effortlessly to access personalized features, including saved items, order history, and more.
@@ -36,6 +38,7 @@ For this application to run you will need:
 1. Install `Github` on **Windows**/ use `Linux`.
 2. 2GB RAM
 3.Google Browser (Chrome, Mozzila, FireFox e.t.c
+4. Internet(strong)
 ## SETUP INSTRUCTIONS
 
 ## DEMO(SCREENSHOTS)
@@ -70,6 +73,14 @@ There are no known issues encountered while building.
 ## Support and contact details
 
 In case of any issues encountered, ideas or making contributions reach out to:
+
+1.
+
+2.
+
+3.
+
+4.
 
 []()
 
