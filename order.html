@@ -1,22 +1,93 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <title>ORDER</title>
-                <meta charset="UTF-8">
-                    <meta name="viewport" content="width=width-device" Initial scale="1.0">
-                        <link rel="stylesheet" type="text/css" href="style.css">
-        </head>
-        <body>
-            <div id="order">
-                <div class="order">
-                    <div class="price">
-                    </div>
-                    <div class="time">
-                    </div>
-                    <div class="location">
-                        <p>You order we deliver.</p>
-                    </div>
-                </div>
-            </div>
-        </body>
-    </html>
+<html >
+<head>
+    
+    <title>Comrade Marketplace-ORDER PAGE</title>
+    <link rel="stylesheet"  href= "order.css"> 
+</head>
+<body>
+    <h1>ORDER PAGE</h1>
+
+    <div>
+        <h2>Selected Item:</h2>
+        <p id="selected-item">Product Name</p>
+    </div>
+
+    <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+    </div>
+
+    <div>
+        <h2>Price of Goods:</h2>
+        <p id="goods-price">ksh0.00</p>
+    </div>
+
+    <div>
+        <label for="delivery-location">Delivery Location:</label>
+        <input type="text" id="delivery-location" name="delivery-location" placeholder="Enter delivery address">
+    </div>
+
+    <div>
+        <label for="shipment-method">Select Shipment Method:</label>
+        <select id="shipment-method" name="shipment-method">
+            <option value="bolt">Bolt (High Fee)</option>
+            <option value="nissan">Nissan (Medium Fee)</option>
+            <option value="motorbike">Motorbike (Low Fee)</option>
+        </select>
+    </div>
+
+    <div>
+        <h2>Delivery Fee:</h2>
+        <p id="delivery-fee">ksh0.00</p>
+    </div>
+
+    <div>
+        <h2>Total Price:</h2>
+        <p id="total-price">ksh0.00</p>
+    </div>
+
+    <div>
+        <button id="proceed-to-payment">Proceed to Payment</button>
+    </div>
+
+    <script>
+        function calculateGoodsPrice(quantity) {
+            return 1000.00 * quantity;
+        }
+
+        function calculateDeliveryFee(location, shipmentMethod) {
+            let fee = 0.00;
+            if (shipmentMethod === 'bolt') {
+                fee = 200.00;
+            } else if (shipmentMethod === 'nissan') {
+                fee = 150.00;
+            } else if (shipmentMethod === 'motorbike') {
+                fee = 100.00;
+            }
+            return fee;
+        }
+
+        function updateTotalPrice() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const location = document.getElementById('delivery-location').value;
+            const shipmentMethod = document.getElementById('shipment-method').value;
+
+            const goodsPrice = calculateGoodsPrice(quantity);
+            const deliveryFee = calculateDeliveryFee(location, shipmentMethod);
+            const totalPrice = goodsPrice + deliveryFee;
+
+            document.getElementById('goods-price').textContent = `ksh${goodsPrice.toFixed(2)}`;
+            document.getElementById('delivery-fee').textContent = `ksh${deliveryFee.toFixed(2)}`;
+            document.getElementById('total-price').textContent = `ksh${totalPrice.toFixed(2)}`;
+        }
+
+        document.getElementById('quantity').addEventListener('change', updateTotalPrice);
+        document.getElementById('delivery-location').addEventListener('input', updateTotalPrice);
+        document.getElementById('shipment-method').addEventListener('change', updateTotalPrice);
+
+        updateTotalPrice();
+    </script>
+</body>
+</html>
+x
