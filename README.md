@@ -10,7 +10,6 @@ The technologies used to create this website were:
 1. HTML
 2. CSS
 
-
 3.JAVASCRIPT
 ## PRE-REQUISITIES
 
@@ -35,8 +34,14 @@ Attached is a working live demo:
 
 This website was built by a scrum team of 4 designers with their github username as:
 1.Lancealeyo
+
+
 2.Sharonkatinda
+
+
 3.Samkhm
+
+
 4.
 
 ## KNOWN ISSUES
