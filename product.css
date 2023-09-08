@@ -205,6 +205,7 @@ h1{
     padding: 5px;
     border-radius: 5px;
 }
+
 footer{
     width: 100%;
     display: flex;
@@ -212,4 +213,6 @@ footer{
     flex-direction: column;
     color: white;
     background-color: blue;
+    margin-top: 10px;
+    border-radius: 10px;
 }
