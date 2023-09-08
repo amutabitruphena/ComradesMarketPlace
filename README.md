@@ -74,11 +74,11 @@ There are no known issues encountered while building.
 
 In case of any issues encountered, ideas or making contributions reach out to:
 
-1.
+1.https://github.com/Lancealeyo/ComradesMarketPlace.git
 
-2.
+2.https://github.com/Sharonkatinda/ComradesMarketPlace.git
 
-3.
+3.https://github.com/samkhm/comradeMarketPlace.git
 
 4.
 
