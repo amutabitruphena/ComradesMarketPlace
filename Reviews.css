@@ -1,4 +1,4 @@
-/* Reviews.css */
+/* styles.css */
 
 body {
     background-color: lightblue;
@@ -92,8 +92,22 @@ ul#reviewList li:last-child {
     border-bottom: none;
 }
 
-.rating {
-    color: yellow;
+button{
+    margin-left: 47%;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 10px;
+    border-style: none;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+button:hover{
+    background-color: bisque;
 }
 footer{
     width: 100%;
