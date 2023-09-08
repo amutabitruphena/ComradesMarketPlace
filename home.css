@@ -237,6 +237,9 @@ video{
     border-radius: 5px;
     top: 10%;
 }
+.products2 .img1:hover{
+  background-color: blueviolet;
+ }
   .products2 .img1 img{
 
    top: -5%;
