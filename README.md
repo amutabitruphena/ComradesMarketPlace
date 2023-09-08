@@ -94,7 +94,7 @@ In case of any issues encountered, ideas or making contributions reach out to:
 
 3. [Samkhm](https://github.com/samkhm/comradeMarketPlace.git)
 
-4. Amutabitruphena
+4. (amutabitruphena)(
 
 ## LICENSE
 
