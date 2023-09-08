@@ -198,6 +198,9 @@ video{
     padding: 5px;
     border-radius: 5px;
 }
+.products .img1:hover{
+ background-color: blueviolet;
+}
   .products .img1 img{
 
    top: -5%;
