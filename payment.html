@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAYMENT</title>
     <link rel="stylesheet" href="payment.css"> 
 </head>
@@ -12,7 +10,6 @@
     </div>
     <h1>Choose Payment Method</h1>
 
-    <!-- Payment Categories -->
     <div>
         <h2>Select Payment Category</h2>
         <form id="paymentCategoryForm">
@@ -34,7 +31,6 @@
         </form>
     </div>
 
-    <!-- Amount Input -->
     <div>
         <h2>Enter Amount</h2>
         <label for="amount">Amount:</label>
@@ -42,15 +38,14 @@
     </div>
 
     <div>
-        <!-- Payment Method Selection -->
         <h2>Choose Payment Method</h2>
         <a href="https://www.paypal.com" target="_blank">
-            <img src="icon.jpg" alt="PayPal">
+            <img src="C:\Users\User\Downloads\paypal icon.jpg" alt="PayPal">
         </a>
         <button onclick="processPayPalPayment()">Pay with PayPal</button>
 
         <a href="https://www.mpesa.com" target="_blank">
-            <img src="icon1.jpg" alt="M-Pesa">
+            <img src="C:\Users\User\Downloads\mpesa.png" alt="M-Pesa">
         </a>
         <button onclick="processMpesaPayment()">Pay with M-Pesa</button>
     </div>
@@ -60,7 +55,7 @@
             const category = document.querySelector('input[name="category"]:checked');
             const amount = document.getElementById('amount').value;
             if (category && amount) {
-                alert(`Redirecting to PayPal for payment of ${amount} for ${category.value}...`);
+                alert(`Redirecting to PayPal for payment of ${amount} for ${category.value}... to PAYBILL 522522 ACCOUNT NO 1285572211`);
             } else {
                 alert('Please select a category and enter an amount.');
             }
@@ -70,7 +65,7 @@
             const category = document.querySelector('input[name="category"]:checked');
             const amount = document.getElementById('amount').value;
             if (category && amount) {
-                alert(`Redirecting to M-Pesa for payment of ${amount} for ${category.value}...`);
+                alert(`Redirecting to M-Pesa for payment of ${amount} for ${category.value}...to PAYBILL 522522 ACCOUNT NO 1285572211`);
             } else {
                 alert('Please select a category and enter an amount.');
             }

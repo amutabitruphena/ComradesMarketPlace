@@ -1,0 +1,49 @@
+
+body {
+    
+    background-color: powderblue; 
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #333; 
+    color:blue; 
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+div {
+    text-align: center;
+}
+
+#goods-price, #delivery-fee, #total-price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#proceed-to-payment {
+    background-color: blue; 
+    color:whitesmoke; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+div:not(:last-child) {
+    margin-bottom: 20px;
+}
