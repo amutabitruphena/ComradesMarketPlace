@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Comrade Marketplace Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Comrade Marketplace Login</h2>
+        <form action="login.php" method="POST" id="loginForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <div id="passwordStrength"></div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="signup.html">Sign up</a>
+        </div>
+     
+    <div class="container">
+        <h2>Create an Account</h2>
+        <form action="signup.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="index.html">Log in</a>
+        </div>
+
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const passwordInput = document.getElementById("password");
+            const confirmPasswordInput = document.getElementById("confirmPassword");
+            const passwordStrength = document.getElementById("passwordStrength");
+
+            passwordInput.addEventListener("input", checkPasswordStrength);
+            confirmPasswordInput.addEventListener("input", checkPasswordMatch);
+
+            function checkPasswordStrength() {
+                const password = passwordInput.value;
+                const strengthMeter = calculatePasswordStrength(password);
+                const strengthText = [
+                    "Very Weak",
+                    "Weak",
+                    "Moderate",
+                    "Strong",
+                    "Very Strong",
+                ];
+
+                passwordStrength.textContent = `Password Strength: ${strengthText[strengthMeter]}`;
+            }
+
+            function calculatePasswordStrength(password) {
+                const length = password.length;
+                const hasNumeric = /[0-9]/.test(password);
+                const hasUpper = /[A-Z]/.test(password);
+                const hasLower = /[a-z]/.test(password);
+
+                if (length < 8 || !hasNumeric || !hasUpper || !hasLower) {
+                    return 0; // Very Weak
+                } else if (length < 12 || !(hasUpper && hasLower)) {
+                    return 1; // Weak
+                } else if (length < 16 || !hasNumeric) {
+                    return 2; // Moderate
+                } else if (length < 20) {
+                    return 3; // Strong
+                } else {
+                    return 4; // Very Strong
+                }
+            }
+
+            function checkPasswordMatch() {
+                const password = passwordInput.value;
+                const confirmPassword = confirmPasswordInput.value;
+
+                if (password === confirmPassword) {
+                    confirmPasswordInput.setCustomValidity("");
+                } else {
+                    confirmPasswordInput.setCustomValidity("Passwords do not match");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
