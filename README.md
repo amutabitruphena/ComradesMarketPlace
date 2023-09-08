@@ -32,6 +32,8 @@ Attached is a working live demo:
 ## AUTHOR INFO
 
 This website was built by a scrum team of 4 designers with their github username as:
+
+
 1.Lancealeyo
 
 
@@ -39,7 +41,6 @@ This website was built by a scrum team of 4 designers with their github username
 
 
 3.Samkhm
-
 
 4.
 
