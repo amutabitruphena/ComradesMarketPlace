@@ -21,7 +21,7 @@ Reviews Page: Share your feedback and read reviews from other users to make info
 
 About us page : This indicates the cofounders and the scrum team members with our contact details ,ready for any support incase of need.
 
-LINK to live site on GitHub pages include
+LINK to live site on GitHub pages include(https://lancealeyo.github.io/ComradesMarketPlace/)
 
 ## TECHNOLOGIES
 
