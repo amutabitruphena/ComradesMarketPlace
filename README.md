@@ -94,13 +94,13 @@ In case of any issues encountered, ideas or making contributions reach out to:
 
 3. [Samkhm](https://github.com/samkhm/comradeMarketPlace.git)
 
-4. (amutabitruphena)(
+4. (amutabitruphena)(https://github.com/amutabitruphena/ComradesMarketPlace)
 
 ## LICENSE
 
 This website adheres to terms of MIT license.
 
-Copyright &copy; (2023) ()
+Copyright &copy; (2023) (Group 4)
 
 
 
