@@ -2,6 +2,23 @@
 
 ## DESCRIPTION
 
+COMRADES MARKETPLACE is your one-stop destination for all your shopping needs as a comrade because the prices are comrade fairly price. Our website offers a seamless and user-friendly experience for both buyers and sellers. Whether you're looking for brand new products or budget-friendly second-hand items, we've got you covered.It is designed and built in simplicity and realible in mind.
+
+Features:
+Home Page: The homepage welcomes you with a clean and intuitive interface, showcasing featured products and the latest deals. It's designed to help you quickly find what you're looking for.
+
+Login Page: Create an account or log in effortlessly to access personalized features, including saved items, order history, and more.
+
+Products: Browse through a wide range of products, including both new and second-hand items. Our extensive catalog covers electronics, fashion, home goods, and much more. Each product listing provides detailed information and high-quality images.
+
+Order Page: Once you've found the perfect item, easily place your order with just a few clicks. You can review your cart, select shipping options, and proceed to checkout.
+
+Payment Page: We offer secure and convenient payment options to ensure a smooth shopping experience. Your payment information is protected, and transactions are processed efficiently.
+
+Reviews Page: Share your feedback and read reviews from other users to make informed decisions. Leave comments and ratings to help fellow shoppers and sellers.
+
+About us page : This indicates the cofounders and the scrum team members with our contact details ,ready for any support incase of need.
+
 
 ## TECHNOLOGIES
 
