@@ -110,7 +110,7 @@ h1{
     flex-direction: row;
     width: 100%;
     height: fit-content;
-    padding: 5px;
+    padding: 4px;
     justify-content: space-between;
 }
 .fun1 .item{
